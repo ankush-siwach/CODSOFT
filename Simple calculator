@@ -1,0 +1,39 @@
+
+#include<iostream>
+using namespace std;
+int main()
+{
+int a1,a2;
+cout<<"enter the two value that you have to calculate :-"<<endl;
+cout<<"first value\n";
+cin>>a1;
+cout<<"second value\n";
+cin>>a2;
+char  op;
+cout<<"enter the opreater"<<endl;
+cin>>op;
+ switch (op)
+{
+    case '-':
+       cout<<"the answer is = "<<a1-a2;
+       break;
+
+    case '+':
+       cout<<"the answer is = "<<a1 + a2;
+       break;
+
+    case '*':
+       cout<<"the answer is = "<<a1 * a2;  
+       break;
+
+    case '/':
+       cout<<"the answer is = "<<a1 / a2;
+       break;
+
+    default:
+       cout<<"enter another opreater"<<endl;
+       break;
+}
+return 0;
+
+ }
