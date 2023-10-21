@@ -1,0 +1,32 @@
+#include<iostream>
+#include<time.h>
+using namespace std;
+int main(){
+   int guessnumber;
+   srand(time(0));
+    int secretnumber =(rand()%100)+1;
+    cout<<"welcome to the number  guessing game"<<endl;
+    cout<<"I'm thinking of a number between 1 and 100"<<endl;
+
+    while (true){
+      cout<<"guess the number "<<endl;
+      cin>>guessnumber;
+      if(guessnumber==secretnumber)
+      {
+         cout<<"Congratulations! You've guessed the correct number " << secretnumber <<endl;
+         break;
+
+      }
+      else if(guessnumber>secretnumber)
+      {
+         cout<<"too high. Try again"<<endl;
+      }
+      else{
+         cout<<"too low. Try again"<<endl;
+         }
+    }
+    
+
+   return 0;
+
+}
